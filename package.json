@@ -1,0 +1,16 @@
+{
+  "name": "bundler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mkusaka/bundler.git",
+  "author": "mkusaka <hinoshita1992@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/babel__generator": "^7.6.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.10.2",
+    "@babel/parser": "^7.10.2"
+  }
+}
