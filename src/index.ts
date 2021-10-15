@@ -7,7 +7,7 @@ import { promises } from "fs";
 /** TODO: entryは外側から渡す or configで渡す */
 const entryPath = "index.js";
 
-const basePath = dirname(entryPath)
+export const basePath = dirname(entryPath)
 const ast = parser.parse(await promises.readFile(entryPath, "utf-8"))
 
 traverse(ast, {
@@ -32,9 +32,9 @@ function getFileName(filename: string) {
 
 
 function getScriptFilePath(basePath: string, filename: string) {
-  if (isNodeModuel(filename)) {
-    return join(basePath, getFileName(filename))
-  }
+  // if (isNodeModuel(filename)) {
+  //   return join(basePath, getFileName(filename))
+  // }
 
   const moduleBasePath = join(basePath, "node_modules", filename)
 
